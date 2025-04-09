@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Maintain clean, readable code that minimizes the need for comments
+
+Only add comments for complex logic that isn't immediately clear

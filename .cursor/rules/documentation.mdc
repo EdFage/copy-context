@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Documentation (Docstrings)
+
+* Every function must have a JSDoc-style docstring
+* Place docstrings immediately before function declarations
+* Include:
+  * Brief description of function purpose
+  * `@param` for each parameter with type and description
+  * `@returns` with return type and description
+  * `@throws` if the function can throw errors
+* Document messaging interfaces between background and content scripts
+
+```javascript
+/**
+ * Extracts selected text and page context, converts to markdown
+ * 
+ * @param {Object} options - Configuration options
+ * @param {boolean} options.includeFullPage - Whether to include the entire page
+ * @returns {Object} Object containing selected text and page context
+ * @throws {Error} If no text is selected or conversion fails
+ */
+function extractContext(options) {
+  // Implementation
+}

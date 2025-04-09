@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Start with high-level pseudocode for each component
+Use indentation to show logical nesting and flow
+Write pseudocode in plain English with UPPERCASE keywords
+Include error handling cases in pseudocode
+Only convert pseudocode to actual implementation when explicitly prompted
+Keep pseudocode aligned with planned implementation structure
