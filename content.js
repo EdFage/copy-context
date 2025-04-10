@@ -3,13 +3,18 @@ const turndownService = new TurndownService({
     codeBlockStyle: 'fenced'
 });
 
-// Remove elements that are likely UI clutter or not part of the main content
 turndownService.remove(['script', 'style', 'noscript', 'iframe', 'svg', 'button', 'input', 'nav', 'footer']);
 
-// Customize handling of certain elements
+// Override the default image rule to remove all images completely
+turndownService.addRule('images', {
+    filter: 'img',
+    replacement: function() {
+        return ''
+    }
+});
+
 turndownService.addRule('ignoreClasses', {
     filter: function(node) {
-        // Check if the node has classes that suggest it's not main content
         if (node.classList) {
             const nonContentClasses = ['menu', 'sidebar', 'navigation', 'nav', 'ad', 'banner', 'footer', 'header'];
             for (const cls of nonContentClasses) {
