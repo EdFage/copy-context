@@ -1,6 +1,6 @@
 # copy-context
 
-A Chrome extension that copies selected text along with its surrounding context, formatted for LLM consumption. 
+Chrome extension to copy user selected text with context  in an LLM-friendly format
 
 ## Installation
 
