@@ -3,6 +3,14 @@
   "description": "Captures selected text and page context to send to LLMs",
   "version": "0.1",
   "manifest_version": 3,
+  "icons": {
+    "48": "copy-context48.png"
+  },
+  "action": {
+    "default_icon": {
+      "48": "copy-context48.png"
+    }
+  },
   "background": {
     "service_worker": "service-worker.js"
   },
