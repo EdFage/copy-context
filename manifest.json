@@ -1,7 +1,7 @@
 {
   "name": "Copy with Context",
   "description": "Captures selected text and page context to send to LLMs",
-  "version": "0.1",
+  "version": "0.1.0",
   "manifest_version": 3,
   "icons": {
     "48": "copy-context48.png"
