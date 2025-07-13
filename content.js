@@ -54,7 +54,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             const markdown = turndownService.turndown(pageHtml);
             
             const formattedOutput = 
-            `explain the user_selected_text in context\n\n` +
+            `The below is output from a chrome extension tool which enables users to copy selected text and its context to the clipboard. Use this context to assist you. Note that the context is not always complete becasue the extension extracts it via a rule-based system from the webpage DOM.\n\n` +
             `<user_selected_text>\n${selectedText}\n</user_selected_text>\n\n` +
             `<full_page_content>\n${markdown}\n</full_page_content>\n\n` +
             `<page_metadata>\n` +
